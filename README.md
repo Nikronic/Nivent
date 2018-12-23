@@ -9,7 +9,7 @@ In this section we provide information about different sections in UI.
   - Website services
   - Upcoming events
 
-### Login & Signup page
+### Login & Sign up page
   - A single page for login and sign up for all type of users
   - An label and/or icon of user exist in every page if user has been logged in.
 
@@ -28,7 +28,7 @@ In this section we provide information about different sections in UI.
     - Description (The goal of event)
     - Producers of event
     - Event poster
-    - Sponser of event
+    - Sponsor of event
     - Time and place
   - It is enough to only one lecture be provided in every event.
   
