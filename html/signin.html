@@ -11,7 +11,7 @@
 <body class="body">
 
 <div class="container">
-    <div class="header">
+    <div>
         <div class="menu">
             <div>
                 <ul class="menu-list">
@@ -51,16 +51,48 @@
 </div>
 
 <div class="container">
-    <div class="content">
+    <div class="content signup">
         <div class="form">
             <form action="">
-                <label for="first-name">Email Address</label>
+                <label for="first-name">First Name</label>
                 <input class="form-item" type="text" id="first-name" name="first-name" placeholder="Your first name...">
 
-                <label for="last-name">Password</label>
+                <label for="last-name">Last Name</label>
                 <input class="form-item" type="text" id="last-name" name="last-name" placeholder="Your last name...">
 
-                <input class="form-submit" type="submit" value="Sign in">
+                <label for="email-up">Email</label>
+                <input class="form-item" type="email" id="email-up" name="email-up"
+                       placeholder="Enter a valid email...">
+
+                <label for="password-up">Password</label>
+                <input class="form-item" type="password" id="password-up" name="password-up" placeholder="password">
+
+                <label for="password-up-con">Confirm Password</label>
+                <input class="form-item" type="password" id="password-up-con" name="password-up-con"
+                       placeholder="password">
+
+                <label for="account-type">Account Type</label>
+                <div class="form-item" id="account-type">
+                    <label class="radio-label">User
+                        <input type="radio" checked="checked" name="account">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-label">Event Admin
+                        <input type="radio" name="account">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-label">Website Admin
+                        <input type="radio" name="account">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <label for="organization">Organization Name</label>
+                <input class="form-item" type="text" id="organization" name="organization"
+                       placeholder="Enter your organization name...">
+
+                <input class="form-submit" type="submit" value="Sign up">
+
             </form>
         </div>
     </div>
