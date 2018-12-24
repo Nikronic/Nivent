@@ -91,6 +91,16 @@
                 <input class="form-item" type="text" id="organization" name="organization"
                        placeholder="Enter your organization name...">
 
+                <label for="org-image">Upload Image</label>
+                <div class="form-item">
+                    <input type="file" class="custom-file-input" id="org-image" name="org-image" content="Upload"
+                           accept="image/*" onchange="loadFile(event)">
+                </div>
+                <div class="form-item">
+                    <img src="../images/noimage.jpg" class="image-preview" id="output">
+                </div>
+
+
                 <input class="form-submit" type="submit" value="Sign up">
 
             </form>
@@ -105,6 +115,6 @@
     </div>
 </div>
 
-
+<script src="../js/main.js" rel="script"></script>
 </body>
 </html>
