@@ -17,6 +17,43 @@
     background: #0B0B0D;
 }
 
+.events {
+    background: #0B0B0D;
+}
+
+.events-list {
+    color: #878686;
+    text-align: center;
+    background: #0A0A0A;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.events-list a {
+    color: unset;
+    text-decoration: none;
+}
+
+.event-card {
+    display: inline-flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: 5px;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(89, 89, 89, 0.19);
+}
+
+.event-card-image {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    max-height: 320px;
+    display: inline;
+}
+
 .title-header {
     color: #d0d0d0;
     text-align: center;
@@ -44,6 +81,10 @@
     display: inline-block;
 }
 
+.big-num {
+    font-size: 30px;
+    color: #a6a5a5;
+}
 
 
 .contact-header {
