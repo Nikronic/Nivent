@@ -263,8 +263,9 @@ input.form-submit:hover {
     height: unset;
     padding-bottom: 10px;
     text-align: center;
-    padding-top: 580px;
+    padding-top: 10px;
 <!-- Not-filling-entire-page -->
+
 }
 
 .about {
