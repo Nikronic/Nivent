@@ -21,7 +21,20 @@
     background: #0B0B0D;
 }
 
+.intro {
+    background: #0B0B0D;
+}
+
 .events-list {
+    color: #878686;
+    text-align: center;
+    background: #0A0A0A;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.service-list {
     color: #878686;
     text-align: center;
     background: #0A0A0A;
@@ -42,8 +55,34 @@
     margin: 5px;
 }
 
+.service-card {
+    display: flex;
+    flex-flow: row;
+    padding: 5px;
+    margin: 20px 5px;
+}
+
+.service-card-reverse {
+    flex-flow: row-reverse !important;
+}
+
 .event-card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(89, 89, 89, 0.19);
+    color: darkorange;
+    animation-name: event-card-hover;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+/*TODO animation is not working*/
+@keyframes event-card-hover {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 10px;
+    }
 }
 
 .event-card-image {
@@ -52,6 +91,27 @@
     max-width: 320px;
     max-height: 320px;
     display: inline;
+}
+
+.service-card-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 250px;
+}
+
+.service-card-desc {
+    height: auto;
+    max-width: 600px;
+    max-height: 480px;
+    display: inline;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+    top: 80px;
+
 }
 
 .title-header {
@@ -447,11 +507,31 @@ input.form-submit:hover {
         font-size: 24px;
     }
 
+    .service-card-desc {
+        top: 25px !important;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
     .menu {
         width: 80%;
+    }
+
+    .service-card-desc {
+        font-size: 18px;
+        top: 65px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .service-card {
+        flex-flow: column;
+    }
+
+    .service-card-reverse {
+        flex-flow: column !important;
     }
 
 }
