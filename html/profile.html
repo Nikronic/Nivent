@@ -32,10 +32,122 @@
 
 <div class="container">
     <div class="content">
+        <div class="form">
+            <form action="">
+                <label for="first-name">First Name</label>
+                <input class="form-item" type="text" id="first-name" name="first-name" placeholder="Your first name...">
 
+                <label for="last-name">Last Name</label>
+                <input class="form-item" type="text" id="last-name" name="last-name" placeholder="Your last name...">
+
+                <label for="email-up">Email</label>
+                <input class="form-item" disabled="disabled" type="email" id="email-up" name="email-up"
+                       placeholder="some@email.com">
+
+                <label for="password-up-prev">Previous Password</label>
+                <input class="form-item" type="password" id="password-up-prev" name="password-up-prev"
+                       placeholder="previous password">
+
+                <label for="password-up">New Password</label>
+                <input class="form-item" type="password" id="password-up" name="password-up" placeholder="new password">
+
+                <label for="password-up-con">Confirm New Password</label>
+                <input class="form-item" type="password" id="password-up-con" name="password-up-con"
+                       placeholder="confirm new password">
+
+                <!--<label for="account-type">Account Type</label>-->
+                <!--<div class="form-item" id="account-type">-->
+                <!--<label class="radio-label">User-->
+                <!--<input type="radio" checked="checked" name="account">-->
+                <!--<span class="checkmark"></span>-->
+                <!--</label>-->
+                <!--<label class="radio-label">Event Admin-->
+                <!--<input type="radio" name="account">-->
+                <!--<span class="checkmark"></span>-->
+                <!--</label>-->
+                <!--<label class="radio-label">Website Admin-->
+                <!--<input type="radio" name="account">-->
+                <!--<span class="checkmark"></span>-->
+                <!--</label>-->
+                <!--</div>-->
+
+                <!--<label for="organization">Organization Name</label>-->
+                <!--<input class="form-item" type="text" id="organization" name="organization"-->
+                <!--placeholder="Enter your organization name...">-->
+
+                <label for="org-image">Change Image</label>
+                <div class="form-item">
+                    <input type="file" class="custom-file-input" id="org-image" name="org-image" content="Upload"
+                           accept="image/*" onchange="loadFile(event)">
+                </div>
+                <div class="form-item">
+                    <img src="../images/noimage.jpg" class="image-preview" id="output">
+                </div>
+                <input class="form-submit" type="submit" value="Save Changes">
+
+            </form>
+        </div>
     </div>
 </div>
 
+<div class="container">
+    <div class="content">
+        <div class="inbox">
+            <div class="inbox-list">
+                <div class="inbox-card">
+                    <label for="event-inbox">Open messages from users of your events or events you requested to
+                        join</label>
+                    <button type="button" class="inbox-button" id="event-inbox">Event Inbox</button>
+                </div>
+
+                <div class="inbox-card">
+                    <label for="website-inbox">Open messages from website admin of events you want to create or
+                        join</label>
+                    <button type="button" class="inbox-button" id="website-inbox">Website Inbox</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="content">
+        <div class="support">
+            <div class="support-list">
+                <div class="support-card">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li class="unordered-list-item"><a href="index.html">Home</a></li>
+                        <li class="unordered-list-item"><a href="#">Privacy Policy</a></li>
+                        <li class="unordered-list-item"><a href="#">FAQs</a></li>
+                        <li class="unordered-list-item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="support-card">
+                    <h3>Support</h3>
+                    <ul>
+                        <li class="unordered-list-item"><a href="#">Open Support Ticket</a></li>
+                        <li class="unordered-list-item"><a href="#">Read Documentation</a></li>
+                        <li class="unordered-list-item"><a href="#">Support Policy</a></li>
+                    </ul>
+                </div>
+                <div class="support-card">
+                    <h3>Social</h3>
+                    <ul>
+                        <li class="unordered-list-item">Twitter<a href="https://twitter.com/NIkronic"> <i
+                                class="fab fa-twitter"></i></a></li>
+                        <li class="unordered-list-item">Github<a href="https://github.com/nikronic"> <i
+                                class="fab fa-github"></i></a></li>
+                        <li class="unordered-list-item">Stackoverflow<a
+                                href="https://stackoverflow.com/users/7606121/m-doosti-lakhani"> <i
+                                class="fab fa-stack-overflow"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container">
     <div class="content">
@@ -45,7 +157,6 @@
         </div>
     </div>
 </div>
-
 
 </body>
 </html>
