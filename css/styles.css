@@ -28,10 +28,22 @@
     background: #0B0B0D;
 }
 
+.lecture-list {
+    color: #878686;
+    text-align: center;
+    background: #0A0A0A;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .lecture-card {
     display: flex;
     flex-flow: row;
     padding: 5px;
+    color: #878686;
     margin: 20px 5px;
 }
 
@@ -84,7 +96,6 @@
     margin: 0 auto;
     padding: 10px;
     display: flex;
-
     flex-wrap: wrap;
 }
 
@@ -632,6 +643,10 @@ input.form-submit:hover {
     .lecture-card-image {
         max-width: 190px;
         max-height: 190px;
+    }
+
+    .lecture-card-desc-container {
+        padding-left: unset;
     }
 
     .service-card-reverse {
