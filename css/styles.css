@@ -429,7 +429,7 @@
 }
 
 .custom-file-input {
-    color: transparent;
+    background: transparent;
 }
 
 .custom-file-input::-webkit-file-upload-button {
