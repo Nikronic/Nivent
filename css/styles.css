@@ -22,7 +22,49 @@
 }
 
 .intro {
+    padding: 10px 5px 35px 5px;
     background: #0B0B0D;
+}
+
+.support {
+    padding: 10px 5px 35px 5px;
+    background: #0B0B0D;
+}
+
+.support-list {
+    color: #878686;
+    text-align: center;
+    background: #0A0A0A;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+}
+
+.support-card {
+    max-width: 150px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.support-card ul, a {
+    list-style-type: none;
+    color: unset;
+    text-decoration: none;
+}
+
+.unordered-list-item {
+    padding: 3px 0 3px 0;
+}
+
+.event-card {
+    display: inline-flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: 5px;
 }
 
 .events-list {
