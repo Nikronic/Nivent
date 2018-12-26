@@ -17,6 +17,51 @@
     background: #0B0B0D;
 }
 
+/*TODO remove image when you want to add backend - just use random gradient colored images*/
+.event-title {
+    background: url("../images/events/PyTorch_Blog-Post_Hero.png");
+    background-size: 100% 100%;
+}
+
+.event-lecture {
+    padding: 10px 5px 35px 5px;
+    background: #0B0B0D;
+}
+
+.lecture-card {
+    display: flex;
+    flex-flow: row;
+    padding: 5px;
+    margin: 20px 5px;
+}
+
+.lecture-card-desc {
+    height: auto;
+    max-width: 600px;
+    max-height: 480px;
+    display: inline;
+    padding: 20px;
+    text-align: center;
+}
+
+.lecture-card-image {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    max-width: 280px;
+    min-width: 190px;
+    min-height: 190px;
+    border-radius: 50%;
+}
+
+.lecture-card-image-container {
+
+}
+
+.lecture-card-desc-container {
+    padding-left: 50px;
+}
+
 .events {
     background: #0B0B0D;
 }
@@ -165,6 +210,11 @@
     margin-bottom: 50px;
 }
 
+.title-header-desc {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
 .title-statistics {
     color: #878686;
     position: relative;
@@ -183,6 +233,7 @@
     padding: 20px;
     margin: 10px auto;
     display: inline-block;
+    vertical-align: top;
 }
 
 .big-num {
@@ -572,6 +623,15 @@ input.form-submit:hover {
 @media screen and (max-width: 600px) {
     .service-card {
         flex-flow: column;
+    }
+
+    .lecture-card {
+        flex-flow: column;
+    }
+
+    .lecture-card-image {
+        max-width: 190px;
+        max-height: 190px;
     }
 
     .service-card-reverse {
