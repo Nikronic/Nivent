@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Event Page</title>
+
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body">
+
+
+<div class="container">
+    <div class="">
+        <div class="menu">
+            <div>
+                <ul class="menu-list">
+                    <li class="menu-list-item menu-title"><a href="#">Nivent</a></li>
+                    <li class="menu-list-item"><a href="event.html"> Events</a></li>
+                    <li class="menu-list-item"><a href="profile.html">Dashboard</a></li>
+                    <div class="profile-image-nav-container">
+                        <i class="menu-list-item"><a href="profile.html"><img
+                                src="../images/me.jpg" class="profile-image-nav"></a></i>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="content">
+        <div class="form">
+            <form action="" id="new-event-form">
+                <label for="event-title">Event Title</label>
+                <input class="form-item" type="text" id="event-title" name="first-name" placeholder="Event Title...">
+
+                <label for="event-description">Event Description</label>
+                <textarea class="form-item" id="event-description" name="event-description"
+                          form="new-event-form" rows="4" placeholder="A brief description of your event..."></textarea>
+
+                <label for="event-topics">Event Topics</label>
+                <textarea class="form-item" id="event-topics" name="event-topics"
+                          form="new-event-form" rows="4"
+                          placeholder="Topic one description&#10;Topic two description&#10;Topic three description&#10;..."></textarea>
+
+                <label for="event-provider">Event Provider</label>
+                <input class="form-item" type="text" id="event-provider" name="last-name"
+                       placeholder="Enter Provider Name...">
+
+                <label for="event-address">Event Address</label>
+                <input class="form-item" type="text" id="event-address" name="event-address"
+                       placeholder="123,12 St. NY">
+
+                <label for="event-length">Event Length</label>
+                <input class="form-item" type="text" id="event-length" name="event-length"
+                       placeholder="Estimation length of event">
+
+                <label for="event-sponsor">Event Sponsor</label>
+                <input class="form-item" type="text" id="event-sponsor" name="event-sponsor"
+                       placeholder="Name of sponsor">
+
+                <!--<label for="account-type">Account Type</label>-->
+                <!--<div class="form-item" id="account-type">-->
+                <!--<label class="radio-label">User-->
+                <!--<input type="radio" checked="checked" name="account">-->
+                <!--<span class="checkmark"></span>-->
+                <!--</label>-->
+                <!--<label class="radio-label">Event Admin-->
+                <!--<input type="radio" name="account">-->
+                <!--<span class="checkmark"></span>-->
+                <!--</label>-->
+                <!--<label class="radio-label">Website Admin-->
+                <!--<input type="radio" name="account">-->
+                <!--<span class="checkmark"></span>-->
+                <!--</label>-->
+                <!--</div>-->
+
+                <!--<label for="organization">Organization Name</label>-->
+                <!--<input class="form-item" type="text" id="organization" name="organization"-->
+                <!--placeholder="Enter your organization name...">-->
+
+                <label for="org-resume">Lecturer Resume</label>
+                <div class="form-item">
+                    <input type="file" class="custom-file-input" id="org-resume" name="org-resume" content="Upload"
+                           accept="application/pdf" onchange="">
+                </div>
+
+                <label for="org-image">Lecturer Image</label>
+                <div class="form-item">
+                    <input type="file" class="custom-file-input" id="org-image" name="org-image" content="Upload"
+                           accept="image/*" onchange="loadFile(event,'output')">
+                </div>
+                <div class="form-item">
+                    <img src="../images/noimage.jpg" class="image-preview" id="output">
+                </div>
+
+
+                <label for="sponsor-image">Sponsor Image</label>
+                <div class="form-item">
+                    <input type="file" class="custom-file-input" id="sponsor-image" name="sponsor-image"
+                           content="Upload"
+                           accept="image/*" onchange="loadFile(event,'output2')">
+                </div>
+                <div class="form-item">
+                    <img src="../images/noimage.jpg" class="image-preview" id="output2">
+                </div>
+
+
+                <input class="form-submit" type="submit" value="Create">
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="content">
+        <div class="support">
+            <div class="support-list">
+                <div class="support-card">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li class="unordered-list-item"><a href="index.html">Home</a></li>
+                        <li class="unordered-list-item"><a href="#">Privacy Policy</a></li>
+                        <li class="unordered-list-item"><a href="#">FAQs</a></li>
+                        <li class="unordered-list-item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="support-card">
+                    <h3>Support</h3>
+                    <ul>
+                        <li class="unordered-list-item"><a href="#">Open Support Ticket</a></li>
+                        <li class="unordered-list-item"><a href="#">Read Documentation</a></li>
+                        <li class="unordered-list-item"><a href="#">Support Policy</a></li>
+                    </ul>
+                </div>
+                <div class="support-card">
+                    <h3>Social</h3>
+                    <ul>
+                        <li class="unordered-list-item">Twitter<a href="https://twitter.com/NIkronic"> <i
+                                class="fab fa-twitter"></i></a></li>
+                        <li class="unordered-list-item">Github<a href="https://github.com/nikronic"> <i
+                                class="fab fa-github"></i></a></li>
+                        <li class="unordered-list-item">Stackoverflow<a
+                                href="https://stackoverflow.com/users/7606121/m-doosti-lakhani"> <i
+                                class="fab fa-stack-overflow"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+        <div class="copyright">
+            <h5><strong>COPYRIGHT © 2018 © <a href="https://nikronic.github.io">NIKRONIC</a></strong><br> ALL RIGHTS
+                RESERVED</h5>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/main.js"></script>
+</body>
+</html>
