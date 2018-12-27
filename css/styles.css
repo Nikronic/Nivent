@@ -258,7 +258,6 @@
     color: #a6a5a5;
 }
 
-
 .contact-header {
     text-align: left;
     justify-content: left;
@@ -306,7 +305,6 @@
     float: right;
 
 }
-
 
 .content-body {
     display: flex;
@@ -515,7 +513,7 @@
 }
 
 .custom-file-input::before {
-    content: 'Change';
+    content: 'Upload';
     color: #d0d0d0;
     display: inline-block;
     background: #08243a;
@@ -531,10 +529,6 @@
     border: none;
     outline: none;
 }
-
-
-
-
 
 .form-upload {
     width: 100%;
@@ -582,7 +576,6 @@ input.form-submit:hover {
     padding-bottom: 10px;
     text-align: center;
     padding-top: 10px;
-<!-- Not-filling-entire-page -->
 
 }
 
@@ -610,10 +603,8 @@ input.form-submit:hover {
 .image-preview {
     max-width: 120px;
     max-height: 120px;
-
     display: inline;
 }
-
 
 .menu {
     position: fixed;
@@ -658,7 +649,6 @@ input.form-submit:hover {
     padding-top: 12px !important;
     padding-bottom: 12px !important;
 }
-
 
 .social {
     position: fixed;
